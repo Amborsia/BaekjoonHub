@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-a = input()
-b = input()
+a = input().strip()
+b = input().strip()
 print(b)
 print(a)
