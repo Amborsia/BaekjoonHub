@@ -4,10 +4,12 @@ avg = 0
 count = 0
 while True:
     temp = int(input().rstrip())
-    if temp <30:
-        count +=1
+    
+    if temp < 30:
+        count += 1
         avg += temp
     else:
-        pit = round(avg/count,2)
-        print(f"{pit:.2f}")
+        if count > 0:
+            pit = round(avg / count, 2)
+            print(f"{pit:.2f}")
         break
