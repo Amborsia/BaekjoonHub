@@ -9,4 +9,4 @@ while a > 0:
     a //= count 
     
 
-print(count - 1)
+print(count)
