@@ -6,8 +6,6 @@ a = int(input().rstrip())
 if a >= 3000:
     print("book")
 elif a >= 1000:
-    print("")
+    print("mask")
 else:
-    print(
-        "no
-    )
+    print("no")
