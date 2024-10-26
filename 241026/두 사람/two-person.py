@@ -11,11 +11,8 @@ sex.append(first_sex)
 sex.append(second_sex)
 IsMale = False
 for i in range(2):
-
     if int(age[i] )>=19 and sex[i] == 'M':
         IsMale = True
         break
-    else:
-        print(0)
 
 print(1 if IsMale else 0)
