@@ -3,10 +3,9 @@ input = sys.stdin.readline
 
 a = int(input().rstrip())
 count = 0
-
-while a > 0:
-    count += 1  
-    a //= count 
-    
-
+for i in range(1, a+1):
+    a //= i
+    count += 1
+    if a <= 1:
+        break
 print(count)
