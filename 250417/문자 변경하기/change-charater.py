@@ -1,2 +1,3 @@
-a = input()
-print('T')
+a = 'C'
+a = 'T'
+print(a)
