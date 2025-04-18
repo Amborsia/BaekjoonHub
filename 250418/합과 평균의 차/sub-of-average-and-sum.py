@@ -1,0 +1,6 @@
+a,b,c = map(int, input().split())
+hap = int(a+b+c)
+avg = int(hap/3)
+print(hap)
+print(avg)
+print(hap-avg)
