@@ -1,9 +1,6 @@
-import math
 def solution(n):
-    answer = 0
-    temp = math.sqrt(n)
-    if(temp.is_integer()):
-        return (math.sqrt(n)+1)**2
-    else:
-        return -1
-    
+    answer = -1
+    value = n**0.5
+    if value % 1 == 0:
+        return (value+1)**2
+    return answer
