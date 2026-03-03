@@ -1,8 +1,15 @@
 def solution(sizes):
-    max_height, max_width = 0,0
-    for w,h in sizes:
-        if w<h:
-            w,h = h,w
-        max_width = max(max_width,w)
-        max_height = max(max_height,h)
-    return max_width*max_height
+    answer = 0
+    maxv=0
+    minv = 0
+    for i in range(0,len(sizes)):
+        r,l = sizes[i]
+        if r>=l:
+            maxv = max(r,maxv)    
+            minv = max(l,minv)
+        else:
+            maxv = max(l,maxv)
+            minv = max(r,minv)
+        
+            
+    return minv*maxv
