@@ -1,14 +1,10 @@
 def solution(s):
     answer = []
-    temp_lit = list(str(s))
-    temp = {}
-    count = 0
-    for i in temp_lit:
-        if i not in temp:
-            temp[i] = count
+    dict = {}
+    for i in range(0,len(s)):
+        if s[i] not in dict:
             answer.append(-1)
         else:
-            answer.append(abs(temp[i]-count))
-            temp[i] = count
-        count +=1
+            answer.append(i-dict[s[i]])
+        dict[s[i]] = i
     return answer
