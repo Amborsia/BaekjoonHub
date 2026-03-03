@@ -1,8 +1,7 @@
 def solution(numbers):
-    num = list(str(numbers))
-    num_set = set(num)
+    temp = list(set(numbers))
     answer = 0
-    for i in range(0,10):
-        if str(i) not in num_set:
-            answer += i
+    for i in range(1,10):
+        if i not in temp:
+            answer+=i
     return answer
