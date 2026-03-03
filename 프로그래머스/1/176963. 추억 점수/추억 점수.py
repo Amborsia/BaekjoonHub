@@ -1,11 +1,10 @@
 def solution(name, yearning, photo):
-    answer = [0]*len(photo)
-    temp_dict = {}
-    for i in range(len(name)):
-        temp_dict[name[i]] = yearning[i]
-        
-    for i in range(len(photo)):
-        for j in photo[i]:
-            if(j in temp_dict):
-                answer[i]+= temp_dict[j]
+    answer = []
+    for i in photo:
+        temp = 0
+        for j in name:
+            # print(j in i, j, name.index(j), yearning[name.index(j)])
+            if j in i:
+                temp += yearning[name.index(j)]
+        answer.append(temp)
     return answer
