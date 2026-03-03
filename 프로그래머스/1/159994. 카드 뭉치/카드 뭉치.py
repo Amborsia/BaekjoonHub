@@ -1,11 +1,16 @@
 def solution(cards1, cards2, goal):
-    index1, index2 = 0,0
-
-    for word in goal:
-        if index1<len(cards1) and cards1[index1] == word:
-            index1+=1
-        elif index2<len(cards2) and cards2[index2] == word:
-            index2+=1
+    answer = ''
+    result = []
+    idx1 = 0
+    idx2 = 0
+    for i in goal:
+        if idx1 <len(cards1) and cards1[idx1] == i:
+            idx1 +=1
+            
+        elif idx2 <len(cards2) and cards2[idx2] == i:
+            idx2 +=1
         else:
             return "No"
+        
+        
     return "Yes"
