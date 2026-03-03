@@ -1,8 +1,8 @@
 def solution(nums):
     answer = 0
-    temp = set(nums)
-    count = len(nums)//2
-    if(len(temp) < count):
-        return len(temp)
+    leng = len(nums)//2
+    num_lit = list(set(nums))
+    if leng >= len(num_lit):
+        return len(num_lit)
     else:
-        return count
+        return leng
