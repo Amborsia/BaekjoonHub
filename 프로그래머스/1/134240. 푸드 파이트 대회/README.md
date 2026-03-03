@@ -1,10 +1,10 @@
 # [level 1] 푸드 파이트 대회 - 134240 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/134240) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/134240#) 
 
 ### 성능 요약
 
-메모리: 9.58 MB, 시간: 4.40 ms
+메모리: 9.24 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 03월 03일 14:49:59
+2026년 03월 03일 14:53:34
 
 ### 문제 설명
 
