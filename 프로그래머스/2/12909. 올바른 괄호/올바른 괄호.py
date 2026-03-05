@@ -1,17 +1,13 @@
-from collections import deque
 def solution(s):
-    count= 0
-    lit = deque(s)
-    for i in range(len(s)):
-        temp = lit.popleft()
-        if(temp == '('):
-            count +=1
-        elif temp == ')':
-            if count == 0:
+    open = 0
+    for i in range(0,len(s)):
+        if s[i] == "(":
+            open+=1
+        elif s[i] == ")":
+            if open >=1:
+                open-=1
+            else:
                 return False
-            count -=1
-
-    if count > 0:
+    if open >=1:
         return False
-
     return True
