@@ -1,11 +1,9 @@
 def solution(s):
-    result = []
-    words = s.split(" ")
-
-    for word in words:
-        if len(word) > 0:
-            result.append(word[0].upper() + word[1:].lower())
-        else:
-            result.append("")
-
-    return " ".join(result)
+    answer = ''
+    s = s.lower()
+    s = s.split(' ')
+    for i in range(len(s)):
+        if s[i]:
+            s[i] = s[i][0].upper() +s[i][1:]
+    # print(s)
+    return " ".join(s)
