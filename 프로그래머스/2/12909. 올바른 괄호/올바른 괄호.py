@@ -1,13 +1,14 @@
 def solution(s):
-    open = 0
-    for i in range(0,len(s)):
-        if s[i] == "(":
-            open+=1
-        elif s[i] == ")":
-            if open >=1:
-                open-=1
-            else:
+    lit=list()
+    
+    for i in s:
+        if i == "(":
+            lit.append(i)
+        elif i == ")":
+            try:
+                lit.pop()
+            except:
                 return False
-    if open >=1:
+    if lit:
         return False
     return True
