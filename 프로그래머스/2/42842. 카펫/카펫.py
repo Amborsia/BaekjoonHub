@@ -1,8 +1,9 @@
 def solution(brown, yellow):
-    answer = brown + yellow
-    for height in range(3, int(answer **0.5)+1):
-        if answer % height == 0:
-            width = answer // height
-            if (width-2) * (height-2) == yellow:
-                return [width, height]
-    return answer
+    answer = []
+    total = brown+yellow
+    for i in range(3, int(total**0.5)+1):
+        if total % i == 0:
+            w = total//i
+            if (w-2) * (i-2) == yellow:
+                return [w, i]
+
